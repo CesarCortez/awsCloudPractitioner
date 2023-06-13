@@ -148,6 +148,19 @@ Also you can download [the official exam guide](https://d1.awsstatic.com/trainin
 - it is not typically tied to any one operating system or programming language.
 - AWS: a collection of remote computing services that together make up a cloud computing platform, offered over the Internet by Amazon.com.
 - Offers flexible, reliable, scalable, easy-to-use and cost-effective solutions.
+
+### CAF (Cloud Adoption Framework)
+- The Cloud Adoption Framework (CAF) provides guidance for adopting the cloud.
+- The CAF is designed to help you build a comprehensive approach to cloud computing across your organization, and throughout your IT lifecycle.
+- The CAF is divided into six areas of focus, called perspectives.
+- The perspectives are:
+	- **Business**: The business perspective focuses on the business outcomes that you want to achieve.
+	- **People**: The people perspective focuses on the people who are involved in your cloud adoption journey.
+	- **Governance**: The governance perspective focuses on the governance model that you will use to manage and measure your cloud adoption journey.
+	- **Platform**: The platform perspective focuses on the platform that you will use to support your cloud adoption journey.
+	- **Security**: The security perspective focuses on the security controls that you will use to protect your cloud adoption journey.
+	- **Operations**: The operations perspective focuses on the operations that you will use to run your cloud adoption journey.
+
 ### AWS Categories
 
 - **Compute**: Amazon EC2, AWS Lambda, Amazon ECS, Amazon EKS, AWS Batch, AWS Elastic Beanstalk, AWS Fargate, AWS Serverless Application Repository, AWS Outposts, AWS Wavelength, AWS Snow Family, AWS Thinkbox Deadline
