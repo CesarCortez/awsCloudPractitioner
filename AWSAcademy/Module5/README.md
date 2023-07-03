@@ -100,3 +100,24 @@
 
 - **Security groups** act at the instance level, not the subnet level. Therefore, each instance in a subnet in your VPC could be assigned to a different set of security groups. If you don't specify a particular group at launch time, the instance is automatically assigned to the default security group for the VPC.
 - **Network ACLs (Network access comtrol list)** act at the subnet level. Therefore, each instance in a subnet in your VPC could be associated with a different network ACL; however, a single network ACL can be associated with multiple subnets. If you don't explicitly associate a network ACL with a subnet, the subnet is automatically associated with the default network ACL.
+
+## Amazon Route 53
+
+- Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like.
+- Amazon Route 53 effectively connects user requests to infrastructure running in AWS – such as Amazon EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets – and can also be used to route users to infrastructure outside of AWS. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints. Amazon Route 53 Traffic Flow makes it easy for you to manage traffic globally through a variety of routing types, including Latency Based Routing, Geo DNS, and Weighted Round Robin—all of which can be combined with DNS Failover in order to enable a variety of low-latency, fault-tolerant architectures. Using Amazon Route 53 Traffic Flow’s simple visual editor, you can easily manage how your end-users are routed to your application’s endpoints—whether in a single AWS region or distributed around the globe. Amazon Route 53 also offers Domain Name Registration – you can purchase and manage domain names such as example.com and Amazon Route 53 will automatically configure DNS settings for your domains.
+
+1. **simple routing** - Simple routing lets you route internet traffic to a single resource.
+2. **weighted routing** - Weighted routing lets you split your traffic based on different weights assigned to the routes.
+3. **latency-based routing** - Latency-based routing lets you route your traffic based on the lowest network latency for your end user.
+4. **failover routing** - Failover routing lets you route your traffic based on the health of your endpoints.
+5. **geolocation routing** - Geolocation routing lets you choose the resources that serve your traffic based on the geographic location of your users.
+6. **multivalue answer routing** - Multivalue answer routing lets you configure Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can specify multiple values for almost any record, but multivalue answer routing also lets you check the health of each resource, so Amazon Route 53 returns only values for healthy resources. If all the resources are unhealthy, Amazon Route 53 can return up to eight healthy records using multivalue answer routing.
+7. **geoproximity routing** - Geoproximity routing lets Amazon Route 53 route traffic to your resources based on the geographic location of your users and your resources. You can also optionally choose to route more traffic or less to a given resource by specifying a value, known as a bias. A bias expands or shrinks the size of the geographic region from which traffic is routed to a resource.
+
+## Amazon CloudFront
+
+- Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
+- CloudFront is integrated with AWS – both physical locations that are directly connected to the AWS global infrastructure, as well as other AWS services. CloudFront works seamlessly with services including AWS Shield for DDoS mitigation, Amazon S3, Elastic Load Balancing or Amazon EC2 as origins for your applications, and Lambda@Edge to run custom code closer to customers’ users and to customize the user experience. Lastly, if you use AWS origins such as Amazon S3, Amazon EC2 or Elastic Load Balancing, you don’t pay for any data transferred between these services and CloudFront.
+
+![CloudFront](../img/CloudFront.JPG)
+![CloudFront2](../img/CloudFront2.JPG)
